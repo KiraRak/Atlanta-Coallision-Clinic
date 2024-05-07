@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*:root {
+  color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEDER SECTION*/
+.hed-container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 350px;
+  /*background-color: #e9edc9;*/
+  padding-left: 40px;
+}
+
+.logo{
+  width: 160px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.list{
+  display: flex;
+  column-gap: 50px;
+}
+
+.list-item{
+  color: #023047;
+}
+
+.list-item:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*.hed-button{
+  background-color: #eb5e28;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}*/
+
+/*.hed-button:hover{
+  background-color: #cb5221;
+}*/
+
+/*SERACH SECTION*/
+.srch-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.banner{
+  border-radius: 35px;
+  width: 700px;
+  margin: 15px;
+}
+
+.srch-bar{
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  background-color: white;
+  /*shadow order: horizontal, vertical, blur, color with opacity*/
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 450px;
+  margin-top: -40px;
+}
+
+.srch-input{
+  outline: none;
+  width: 100%;
+}
+
+.srch-icon{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*FILTER SECTION*/
+.srch-filter{
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 18px;
+}
+
+.tag-item {
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag-item:hover {
+  transform: scale(1.1);
+  border: 1px solid #8ecae6;
+}
+
+.tag-item.active {
+  background-color: #79b4cd;
+  color: #fff;
+}
